@@ -1,5 +1,10 @@
-﻿
-namespace part1_max_unequal_consecutive_characters
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ReskillProgram.Lesson1
 {
     class MaxUnrepeating
     {
@@ -9,18 +14,18 @@ namespace part1_max_unequal_consecutive_characters
             Console.WriteLine("Type a sequence of symbols, and then press Enter:");
             string symbols = Console.ReadLine();
 
-            Console.WriteLine("The maximum number of unequal consecutive characters :" + 
-               maxUnequalConsecutiveCharacters(symbols));
+            Console.WriteLine("The maximum number of unequal consecutive characters :" +
+               MaxUnequalConsecutiveCharacters(symbols));
         }
-        static int maxUnequalConsecutiveCharacters(string str)
+        static int MaxUnequalConsecutiveCharacters(string str)
         {
             int max = 1;
             int count = 1;
 
-            for (int i = 1; i < str.Length-1; i++)
+            for (int i = 1; i < str.Length - 1; i++)
             {
                 bool isRepeated = false;
-                for(int j = 0; j < i; j++)
+                for (int j = 0; j < i; j++)
                 {
                     if (str[j] == str[i])
                     {
@@ -29,19 +34,19 @@ namespace part1_max_unequal_consecutive_characters
                     }
                 }
 
-                if(isRepeated.Equals(false))
+                if (isRepeated.Equals(false))
                 {
                     count++;
                 }
-                else 
+                else
                 {
-                    if(count>max)
+                    if (count > max)
                     {
                         max = count;
                     }
                     count = 1;
                 }
-               
+
             }
 
             return max;
