@@ -1,9 +1,10 @@
-﻿using System;
+﻿using ReskillProgram.src.Lesson5.Vehicles;
+using System;
 
-public class Truck
+public class Truck : Vehicle
 {
-    public Chassis Chassis { get; set;}
-    public Transmission Transmission { get; set; }
-    public Engine Engine { get; set; }
+    public Truck(Chassis chassis, Transmission transmission, Engine engine) : base(chassis, transmission, engine)
+    {
+    }
 }
 

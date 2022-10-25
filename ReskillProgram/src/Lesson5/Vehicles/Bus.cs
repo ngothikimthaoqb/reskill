@@ -1,8 +1,9 @@
-﻿using System;
+﻿using ReskillProgram.src.Lesson5.Vehicles;
+using System;
 
-public class Bus
+public class Bus : Vehicle
 {
-	public Class1()
-	{
-	}
+    public Bus(Chassis chassis, Transmission transmission, Engine engine) : base(chassis, transmission, engine)
+    {
+    }
 }

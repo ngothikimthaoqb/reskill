@@ -2,14 +2,15 @@
 
 public class Chassis
 {
-    private int WheelsNumber,;
-    private int Number;
-    private int PermissibleLoad;
+    public int WheelsNumber { get; set; }
+    public int Number { get; set; }
+    public int PermissibleLoad { get; set; }
 
     public Chassis(int wheelsNumber, int number, int permissibleLoad)
-	{
-		this.WheelsNumber = wheelsNumber;
-		this.Number = number;
-		this.PermissibleLoad = permissibleLoad;
-	}
+    {
+        Number = number;
+        WheelsNumber = wheelsNumber;
+        PermissibleLoad = permissibleLoad;
+    }
+
 }

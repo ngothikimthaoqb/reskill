@@ -2,9 +2,9 @@
 
 public class Transmission
 {
-    private string Type,;
-    private int NumberOfGears;
-    private string Manufacturer;
+    public string Type { get; set; }
+    public int NumberOfGears { get; set; }
+    public string Manufacturer { get; set; }
 
     public Transmission(string type, int numberOfGears, string manufacturer)
     {
