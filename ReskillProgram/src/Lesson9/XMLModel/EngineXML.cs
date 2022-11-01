@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReskillProgram.src.Lesson5.Tests
+namespace ReskillProgram.src.Lesson9.XMLModel
 {
-    class BusTest
+    public class EngineXML
     {
-       
+        public List<Engine>? Engines { get; set; }
     }
 }

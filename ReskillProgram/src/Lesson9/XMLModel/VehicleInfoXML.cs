@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReskillProgram.src.Lesson5.XMLModel
+namespace ReskillProgram.src.Lesson9.XMLModel
 {
     public class VehicleInfoXML
     {

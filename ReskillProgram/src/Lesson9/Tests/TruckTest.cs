@@ -5,7 +5,7 @@ using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReskillProgram.src.Lesson5.Tests
+namespace ReskillProgram.src.Lesson9.Tests
 {
     class TruckTest
     {
