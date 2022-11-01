@@ -1,18 +1,9 @@
 ﻿using ReskillProgram.src.Lesson9.CustomException;
-using ReskillProgram.src.Lesson9.Vehicles;
-using ReskillProgram.src.Lesson9.XMLModel;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Serialization;
 
 namespace ReskillProgram.src.Lesson5.Tests
 {
 
-    public class VehicleCollectionTest
+    public class ExceptionTest
     {
         static void Main(string[] args)
         {
@@ -42,6 +33,7 @@ namespace ReskillProgram.src.Lesson5.Tests
 
             PassengerCar passengerCar;
 
+            // TypeInitializationException
             try
             {
                 passengerCar = new PassengerCar() { Chassis = passengerCarChassis, Transmission = passengerCarTransmission, Engine = passengerCarEngine };
@@ -50,38 +42,48 @@ namespace ReskillProgram.src.Lesson5.Tests
             {
                 throw e;
             }
-         
+
+            // AddException
             try
             {
                 vehiclesCollection.Add(passengerCar);
             }
             catch (Exception e)
             {
-                throw e;
+                throw new AddException(passengerCar.Transmission.Type);
             }
 
-            PassengerCar passengerException = new PassengerCar();
+            
 
             // GetAutoByParameterException
             try
             {
-                passengerException.Transmission.GetManufacturer();
+                PassengerCar passengerGetAutoByParameterException = new PassengerCar();
+                passengerGetAutoByParameterException.Transmission.GetManufacturer();
             }
-            catch (Exception e)
+            catch (GetAutoByParameterException e)
             {
                 throw e;
             }
 
-            // UpdateAutoException 
+            // UpdateAutoException
+            try
+            {
+               
+                passengerCar.Transmission.UpdateManufacture("MHKG");
+            }
+            catch (UpdateAutoException e)
+            {
+                throw e;
+            }
 
             // RemoveAutoException
-
             try
             {
 
-                passengerException.Dispose();
+                passengerCar.Dispose();
             }
-            catch (Exception e)
+            catch (RemoveAutoException e)
             {
                 throw e;
             }
