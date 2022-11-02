@@ -1,23 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ReskillProgram.Lesson1
 {
-    class ConvertDecimalToBase
+    public class MaxUnrepeating
     {
-        static void main(string[] args)
-        {
-            // Ask the user to type a sequence of symbols
-            Console.WriteLine("Type a sequence of symbols, and then press Enter:");
-            string symbols = Console.ReadLine();
-
-            Console.WriteLine("The maximum number of unequal consecutive characters:" +
-               MaxUnequalConsecutiveCharacters(symbols));
-        }
-        static int MaxUnequalConsecutiveCharacters(string str)
+        public int MaxUnequalConsecutiveCharacters(string str)
         {
             int max = 1;
             int count = 1;
@@ -28,6 +20,66 @@ namespace ReskillProgram.Lesson1
                 for (int j = 0; j < i; j++)
                 {
                     if (str[j] == str[i])
+                    {
+                        isRepeated = true;
+                        break;
+                    }
+                }
+
+                if (isRepeated.Equals(false))
+                {
+                    count++;
+                }
+                else
+                {
+                    if (count > max)
+                    {
+                        max = count;
+                    }
+                    count = 1;
+                }
+
+            }
+
+            return max;
+        }
+
+        public int MaximumNumberConsecutiveIdenticalDigits(string str)
+        {
+
+            int max = 1;
+           
+            for (int i = 1; i < str.Length - 1; i++)
+            {
+                    for (int j = 0; j < str.Length; i++)
+                    {
+                        if (Char.IsNumber(str[j]) && str[j] == str[i])
+                        {
+                            if(max < j - i)
+                            {
+                                max = j - i;
+                                i = j;
+                            }
+                        }
+                    }
+                
+            }
+
+            return max;
+        }
+    
+
+        public int MaximumNumberConsecutiveIdenticalLeters(string str)
+        {
+            int max = 1;
+            int count = 1;
+
+            for (int i = 1; i < str.Length - 1; i++)
+            {
+                bool isRepeated = false;
+                for (int j = 0; j < i; j++)
+                {
+                    if (str[j] == str[i] && Char.IsLetter(str[j]))
                     {
                         isRepeated = true;
                         break;
