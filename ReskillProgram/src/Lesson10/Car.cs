@@ -20,7 +20,6 @@ namespace ReskillProgram.src.Lesson10
             this.Model = Model;
             this.Quantity = Quantity;
             this.Cost = Cost;
-
         }
     }
 }

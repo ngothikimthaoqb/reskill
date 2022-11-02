@@ -28,9 +28,10 @@ namespace ReskillProgram.src.Lesson10
             }
 
             CarCollection carCollection = new CarCollection();
-            carCollection.averageCost(cars);
-            carCollection.averagePriceType(cars);
-            carCollection.countTypes(cars);
+            carCollection.AverageCost(cars);
+            carCollection.AveragePriceType(cars);
+            carCollection.CountTypes(cars);
+            carCollection.TotalNumberOfCars(cars);
         }
 
     }
