@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace ReskillProgram.Lesson1
 {
-    class MaxUnrepeating
+    class ConvertDecimalToBase
     {
-        static void Main(string[] args)
+        static void main(string[] args)
         {
             // Ask the user to type a sequence of symbols
             Console.WriteLine("Type a sequence of symbols, and then press Enter:");
             string symbols = Console.ReadLine();
 
-            Console.WriteLine("The maximum number of unequal consecutive characters :" +
+            Console.WriteLine("The maximum number of unequal consecutive characters:" +
                MaxUnequalConsecutiveCharacters(symbols));
         }
         static int MaxUnequalConsecutiveCharacters(string str)
