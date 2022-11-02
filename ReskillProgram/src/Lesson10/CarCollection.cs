@@ -8,7 +8,7 @@ namespace ReskillProgram.src.Lesson10
 {
     public class CarCollection
     {
-        public int countTypes(List<Car> cars)
+        public int CountTypes(List<Car> cars)
         {
             int numberOfType = 1;
             for (int i = 0; i < cars.Count; i++)
@@ -32,7 +32,7 @@ namespace ReskillProgram.src.Lesson10
             return numberOfType;
         }
 
-        public int totalNumberOfCars(List<Car> cars)
+        public int TotalNumberOfCars(List<Car> cars)
         {
             int numberOfCar = 0;
             for (int i = 0; i < cars.Count; i++)
@@ -44,7 +44,7 @@ namespace ReskillProgram.src.Lesson10
             return numberOfCar;
         }
 
-        public decimal averageCost(List<Car> cars)
+        public decimal AverageCost(List<Car> cars)
         {
             int totalCars = 0;
             int totalCost = 0;
@@ -58,7 +58,7 @@ namespace ReskillProgram.src.Lesson10
             return totalCost / totalCars;
         }
 
-        public void averagePriceType(List<Car> cars)
+        public void AveragePriceType(List<Car> cars)
         {
 
             var typeGroups = from car in cars group car by car.Brand;
