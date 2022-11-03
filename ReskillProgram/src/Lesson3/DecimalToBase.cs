@@ -10,7 +10,7 @@ namespace ReskillProgram.Lesson3
 {
     public class DecimalToBase
     {
-         /*
+        
         static void Main(string[] args)
         {
             Console.WriteLine("Type a sequence of decimal number, and then press Enter:");
@@ -20,31 +20,31 @@ namespace ReskillProgram.Lesson3
             Console.WriteLine("The original number converted to this system:" +
                ConvertDecimalToBase(decimalNumber, numberBase));
         }
-       */
+       
 
         public static string ConvertDecimalToBase(int decimalNumber, int numberBase)
         {
             const int base10 = 10;
             char[] cHexa = new char[] { 'A', 'B', 'C', 'D', 'E', 'F' };
-            string strBin = "";
+            string originNumber = "";
             int[] result = new int[32];
             int MaxBit = 32;
 
             for (; decimalNumber > 0; decimalNumber /= numberBase)
             {
-                int rem = decimalNumber % numberBase;
-                result[--MaxBit] = rem;
+                int temp = decimalNumber % numberBase;
+                result[--MaxBit] = temp;
             }
 
             for (int i = 0; i < result.Length; i++)
                 if ( (int) result.GetValue(i) >= base10)
-                    strBin += cHexa[ (int) result.GetValue(i) % base10];
+                    originNumber += cHexa[ (int) result.GetValue(i) % base10];
                 else
-                    strBin += result.GetValue(i);
+                    originNumber += result.GetValue(i);
 
-            strBin = strBin.TrimStart(new char[] { '0' });
+            originNumber = originNumber.TrimStart(new char[] { '0' });
 
-            return strBin;
+            return originNumber;
         }
     }
 }

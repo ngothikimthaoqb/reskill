@@ -4,7 +4,7 @@ namespace ReskillProgram.src.Lesson5.Tests
 {
     class DroneTest
     {
-         /*
+         
         static void Main(string[] args)
         {
             Drone drone = new Drone();
@@ -12,6 +12,6 @@ namespace ReskillProgram.src.Lesson5.Tests
             drone.FlyTo(1000);
             Console.WriteLine(drone.ToString());
         }
-         */
+         
     }
 }

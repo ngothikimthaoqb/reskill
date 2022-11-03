@@ -10,7 +10,7 @@ namespace ReskillProgram.src.Lesson5.Tests
 {
     class AirplanTest
     {
-         /*
+        
         public static void Main(string[] args)
         {
             Airplane airplane = new Airplane();
@@ -18,6 +18,6 @@ namespace ReskillProgram.src.Lesson5.Tests
             airplane.FlyTo(1000);
             Console.WriteLine(airplane.ToString());
         }
-          */
+         
     }
 }

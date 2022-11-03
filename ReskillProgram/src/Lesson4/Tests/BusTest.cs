@@ -6,7 +6,7 @@ namespace ReskillProgram.src.Lesson4.Tests
 {
     class BusTest
     {
-        /*
+        
         public static void main(string[] args)
         {
             Chassis chassis = new Chassis(10, 100, 10);
@@ -15,6 +15,6 @@ namespace ReskillProgram.src.Lesson4.Tests
             Bus bus = new Bus(chassis, transmission, engine);
             Console.WriteLine("Bus info:" + bus.ToString());
         }
-        */
+        
     }
 }

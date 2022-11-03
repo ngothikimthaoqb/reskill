@@ -10,7 +10,7 @@ namespace ReskillProgram.src.Lesson4.Tests
 {
     class ScooterTest
     {
-         /*
+         
         public static void main(string[] args)
         {
             Chassis chassis = new Chassis(10, 100, 10);
@@ -19,6 +19,6 @@ namespace ReskillProgram.src.Lesson4.Tests
             Scooter scooter = new Scooter(chassis, transmission, engine);
             Console.WriteLine("Scooter info:" + scooter.ToString());
         }
-         */
+         
     }
 }

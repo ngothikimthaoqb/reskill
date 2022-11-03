@@ -2,7 +2,7 @@
 
 namespace ReskillProgram.src.Lesson5.Tests
 {
-     /*
+     
     static void Main(string[] args)
     {
         Bird bird = new Bird();
@@ -10,5 +10,5 @@ namespace ReskillProgram.src.Lesson5.Tests
         bird.FlyTo(1000);
         Console.WriteLine(bird.ToString());
     }
-     */
+    
 }

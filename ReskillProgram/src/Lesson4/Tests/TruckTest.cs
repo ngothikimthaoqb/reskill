@@ -11,7 +11,7 @@ namespace ReskillProgram.src.Lesson4.Tests
 {
     class TruckTest
     {
-         /*
+        
         public static void main(string[] args)
         {
             Chassis chassis = new Chassis(10, 100, 10);
@@ -20,7 +20,7 @@ namespace ReskillProgram.src.Lesson4.Tests
             Truck truck = new Truck(chassis, transmission, engine);
             Console.WriteLine("Truck info:" + truck.ToString());
         }
-         */
+         
     }
 
 
