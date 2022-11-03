@@ -12,7 +12,7 @@ namespace ReskillProgram.src.Lesson7.Tests
 {
     public class CollectionTest
     {
-         /*
+        
         public static void Main(string[] args)
         {
             var vehiclesCollection = new List<object>();
@@ -46,7 +46,7 @@ namespace ReskillProgram.src.Lesson7.Tests
             vehiclesCollection.Add(scooter);
             vehiclesCollection.Add(passengerCar);
         }
-        */
+        
     }
 
 }
