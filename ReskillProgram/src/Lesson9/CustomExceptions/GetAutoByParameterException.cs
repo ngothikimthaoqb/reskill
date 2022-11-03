@@ -8,8 +8,8 @@ namespace ReskillProgram.src.Lesson9.CustomExceptions
 {
     public class GetAutoByParameterException : Exception
     {
-        public GetAutoByParameterException()
-        : base(String.Format("It is impossible to find the model by the specified parameter"))
+        public GetAutoByParameterException(string message)
+        : base(String.Format(message))
         {
 
         }
