@@ -72,7 +72,8 @@ namespace ReskillProgram.src.Lesson9.Tests
             // GetAutoByParameterException
             try
             {
-                GetTranportByParameter(busTransmission, vehiclesCollection);
+                Vehicles vehicles = new Vehicles();
+                vehicles.GetTransportByParameter(vehiclesCollection, "Type", "Manual");
             }
             catch (GetAutoByParameterException e)
             {
@@ -100,23 +101,6 @@ namespace ReskillProgram.src.Lesson9.Tests
                 throw e;
             }
 
-        }
-
-        public static void GetTranportByParameter(Transmission tranmission, List<Vehicle> vehicles)
-        {
-            bool isExist = false;
-            vehicles.ForEach(vehicle =>
-            {
-            if (vehicle.Transmission == tranmission)
-                {
-                    isExist = true;
-                }
-            });
-
-           if(isExist == false)
-           {
-                throw new GetAutoByParameterException();
-           }
         }
     }
 }
