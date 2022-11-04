@@ -1,2 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root></root>
+<EngineXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Engines>
+		<Engine>
+			<Power>30</Power>
+			<Volume>100</Volume>
+			<Type>petrol</Type>
+			<SerialNumber>HGF112122</SerialNumber>
+		</Engine>
+		<Engine>
+			<Power>30</Power>
+			<Volume>200</Volume>
+			<Type>petrol</Type>
+			<SerialNumber>HGF1D1222</SerialNumber>
+		</Engine>
+	</Engines>
+</EngineXML>
