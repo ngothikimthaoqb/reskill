@@ -25,7 +25,7 @@
 			<PermissibleLoad>100</PermissibleLoad>
 		</Chassis>
 		<Transmission>
-			<Type>MAnual</Type>
+			<Type>Manual</Type>
 			<NumberOfGears>10</NumberOfGears>
 			<Manufacturer>VWASGY</Manufacturer>
 		</Transmission>
@@ -36,40 +36,4 @@
 			<SerialNumber>HGF1D1222</SerialNumber>
 		</Engine>
 	</Truck>
-	<Scooter>
-		<Chassis>
-			<WheelsNumber>10</WheelsNumber>
-			<Number>10</Number>
-			<PermissibleLoad>100</PermissibleLoad>
-		</Chassis>
-		<Transmission>
-			<Type>Auto</Type>
-			<NumberOfGears>10</NumberOfGears>
-			<Manufacturer>VWAGY</Manufacturer>
-		</Transmission>
-		<Engine>
-			<Power>30</Power>
-			<Volume>100</Volume>
-			<Type>petrol</Type>
-			<SerialNumber>HGF1D1222</SerialNumber>
-		</Engine>
-	</Scooter>
-	<PassengerCar>
-		<Chassis>
-			<WheelsNumber>10</WheelsNumber>
-			<Number>10</Number>
-			<PermissibleLoad>100</PermissibleLoad>
-		</Chassis>
-		<Transmission>
-			<Type>Manual</Type>
-			<NumberOfGears>10</NumberOfGears>
-			<Manufacturer>VWAGY</Manufacturer>
-		</Transmission>
-		<Engine>
-			<Power>100</Power>
-			<Volume>50</Volume>
-			<Type>petrol</Type>
-			<SerialNumber>HGFD11222</SerialNumber>
-		</Engine>
-	</PassengerCar>
 </VehicleInfoXML>
