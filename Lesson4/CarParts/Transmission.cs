@@ -9,7 +9,7 @@ namespace Lesson4.CarParts
         public int NumberOfGears { get; set; }
         public string Manufacturer { get; set; }
 
-        public Transmission() { }
+        protected Transmission() { }
         public Transmission(string type, int numberOfGears, string manufacturer)
         {
             this.Type = type;

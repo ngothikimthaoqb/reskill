@@ -1,4 +1,6 @@
 ﻿using Lesson10;
+using Lesson10.CommandPattern;
+using Lesson10.CommandPattern.ConcreteCommand;
 
 public class SingletonDessignTest
 {
@@ -25,11 +27,19 @@ public class SingletonDessignTest
             cars.Add(car);
         }
 
-        CarCollection carCollection = CarCollection.GetInstance();
-        carCollection.AverageCost(cars);
-        carCollection.AveragePriceType(cars);
-        carCollection.CountTypes(cars);
-        carCollection.TotalNumberOfCars(cars);
+        CarCollectionInvoker carCollectionInvoker = new CarCollectionInvoker();
+
+        carCollectionInvoker.SetCommand(new CommandCountTypes(cars));
+        carCollectionInvoker.Run(cars);
+
+        carCollectionInvoker.SetCommand(new CommandAverageCost(cars));
+        carCollectionInvoker.Run(cars);
+
+        carCollectionInvoker.SetCommand(new CommandAveragePriceType(cars));
+        carCollectionInvoker.Run(cars);
+
+        carCollectionInvoker.SetCommand(new CommandTotalNumberOfCars(cars));
+        carCollectionInvoker.Run(cars);
 
     }
 

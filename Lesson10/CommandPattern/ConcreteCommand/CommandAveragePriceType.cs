@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lesson10.CommandPattern.ConcreteCommand
+{
+    public class CommandAveragePriceType : Command
+    {
+        private List<Car> cars;
+
+        public CommandAveragePriceType(List<Car> cars)
+        {
+            this.cars = cars;
+        }
+
+        public void Execute(List<Car> cars)
+        {
+            CarCollection.GetInstance().AveragePriceType(cars);
+
+        }
+    }
+}

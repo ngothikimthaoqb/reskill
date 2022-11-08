@@ -47,6 +47,7 @@ namespace Lesson10
                 }
 
             }
+            Console.WriteLine("The number of types:" + numberOfType);
 
             return numberOfType;
         }
@@ -59,6 +60,8 @@ namespace Lesson10
                 numberOfCar += cars[i].Quantity;
 
             }
+
+            Console.WriteLine("The number of cars:" + numberOfCar);
 
             return numberOfCar;
         }
@@ -73,6 +76,8 @@ namespace Lesson10
                 totalCost += cars[i].Cost * cars[i].Quantity;
 
             }
+
+            Console.WriteLine("The average cost:" + totalCost);
 
             return totalCost / totalCars;
         }
