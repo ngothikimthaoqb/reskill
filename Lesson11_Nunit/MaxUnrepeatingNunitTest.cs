@@ -17,7 +17,7 @@ namespace Lesson11_Nunit
             int maxActual = maxRepeating.MaxUnequalConsecutiveCharacters(input);
 
             // Assert
-            Assert.AreEqual(maxExpected, maxActual);
+            Assert.AreEqual(maxExpected, maxActual, "The maximum number of unequal consecutive characters is" + maxActual + "not equal to" + maxExpected);
         }
 
         [Test]
@@ -32,7 +32,7 @@ namespace Lesson11_Nunit
             int maxActual = maxRepeating.MaximumNumberConsecutiveIdenticalDigits(input);
 
             // Assert
-            Assert.AreEqual(maxExpected, maxActual);
+            Assert.AreEqual(maxExpected, maxActual, "The maximum number of consecutive identical letters of the Latin alphabet is" + maxActual + "not equal to" + maxExpected);
         }
 
         [Test]
@@ -47,7 +47,7 @@ namespace Lesson11_Nunit
             int maxActual = maxRepeating.MaximumNumberConsecutiveIdenticalLeters(input);
 
             // Assert
-            Assert.AreEqual(maxExpected, maxActual);
+            Assert.AreEqual(maxExpected, maxActual, "The maximum number of consecutive identical digit is" + maxActual + "not equal to" + maxExpected);
         }
     }
 }

@@ -25,7 +25,7 @@ public class SingletonDessignTest
             cars.Add(car);
         }
 
-        CarCollection carCollection = CarCollection.GetInstance;
+        CarCollection carCollection = CarCollection.GetInstance();
         carCollection.AverageCost(cars);
         carCollection.AveragePriceType(cars);
         carCollection.CountTypes(cars);

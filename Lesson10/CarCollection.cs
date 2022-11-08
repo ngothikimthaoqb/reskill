@@ -10,14 +10,11 @@ namespace Lesson10
     {
         private static int counter = 0;
         private static CarCollection instance = null;
-        public static CarCollection GetInstance
+        public static CarCollection GetInstance()
         {
-            get
-            {
-                if (instance == null)
-                    instance = new CarCollection();
-                return instance;
-            }
+           if (instance == null) instance = new CarCollection();
+                
+           return instance;
         }
 
         private CarCollection()
